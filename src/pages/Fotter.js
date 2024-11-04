@@ -70,7 +70,6 @@ export function Fotter() {
   ];
   return (
     (<div className="flex items-center justify-center h-[35rem] w-full">
-        <h4 className="text-6xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 bg-[length:200px_100%]">Fotter</h4>
       <FloatingDock
         // only for demo, remove for production
         mobileClassName="translate-y-20"
