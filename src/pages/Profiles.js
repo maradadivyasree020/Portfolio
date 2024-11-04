@@ -5,7 +5,7 @@ import React from "react";
 import { CardBody, CardContainer, CardItem } from "../@/components/ui/3d-card";
 import {Link} from "react-router-dom";
 
-export function Profiles() {
+function Profiles() {
 
   const list=[
     {
@@ -47,3 +47,5 @@ export function Profiles() {
     
   );
 }
+
+export default Profiles

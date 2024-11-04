@@ -5,8 +5,7 @@ import React from "react";
 import { CardBody, CardContainer, CardItem } from "../@/components/ui/3d-card";
 import {Link} from "react-router-dom";
 
-export function Projects() {
-
+const Projects = () => {
   const list=[
     {
       "Name":"Code Editor",
@@ -54,3 +53,5 @@ export function Projects() {
     
   );
 }
+
+export default Projects
