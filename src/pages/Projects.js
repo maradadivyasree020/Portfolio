@@ -3,24 +3,43 @@
 import Image from "react-bootstrap/Image";
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "../@/components/ui/3d-card";
-import {Link} from "react-router-dom";
+import ce from "../assets/ce.png"
+import lp from "../assets/lp.png"
+import nc from "../assets/nc.png"
+import dc from "../assets/dc.png"
+import mg from "../assets/mg.png"
 
 const Projects = () => {
   const list=[
     {
       "Name":"Code Editor",
+      "img":ce,
+      "srccode":"https://github.com/maradadivyasree020/CodeEditor",
+      "link":"https://maradadivyasree020.github.io/CodeEditor/",
     },
     {
       "Name":"Tiny Seeds Landing Page",
+      "img":lp,
+      "srccode":"https://github.com/maradadivyasree020/landing_mern",
+      "link":"https://landing-mern.vercel.app/",
     },
     {
       "Name":"Netflix Clone",
+      "img":nc,
+      "srccode":"https://github.com/maradadivyasree020/Netflix_clone",
+      "link":"https://netflix-clone-gules-ten.vercel.app/",
     },
     {
       "Name":"Disney Clone",
+      "img":dc,
+      "srccode":"https://github.com/maradadivyasree020/disney-clone",
+      "link":"https://disneyclone-beta.vercel.app/",
     },
     {
       "Name":"Memory Game",
+      "img":mg,
+      "srccode":"https://github.com/maradadivyasree020/MemoryGame",
+      "link":"https://maradadivyasree020.github.io/MemoryGame/",
     },
   ]
 
@@ -36,14 +55,14 @@ const Projects = () => {
                 <CardItem translateZ="50" className="text-xl font-bold  text-white">{li.Name}</CardItem>
                 {/* Image */}
                 <CardItem translateZ="100" className="w-full mt-4">
-                  <Image src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="1000" width="1000" className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl" alt="Project Image" />
+                  <Image src={li.img} height="1000" width="1000" className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl" alt="Project Image" />
                 </CardItem>
                 <div className="flex justify-between items-center mt-[10px]">
-                  {/* Hosted Link */}
-                  <CardItem translateZ={20} as={Link} href="https://twitter.com/mannupaaji" target="__blank" className="px-4 py-2 rounded-xl text-xs font-normal text-white dark:text-white">View Project →</CardItem>
                   {/* Src Code */}
-                  <CardItem translateZ={20} as="button" className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold">Source Code</CardItem>
-                </div>
+                  <a translateZ={20} href={li.srccode} target="__blank" className="px-4 py-2 rounded-xl text-lg font-normal text-white dark:text-white">View Code</a>
+                  {/* Hosted Link */}
+                  <a translateZ={20} href={li.link} target="__blank" className="px-4 py-2 rounded-xl text-lg font-normal text-white dark:text-white">View Project →</a>
+                  </div>
               </CardBody>
             </CardContainer>
           ))

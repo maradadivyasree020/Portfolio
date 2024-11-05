@@ -5,8 +5,14 @@ const AboutMe = () => {
     <div>
         <h4 className="text-6xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 bg-[length:300px_100%]">About Me</h4>
         <br/>
-        <p className='text-[17px]'>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        <p className='text-xl'>
+        As an aspiring software developer, I bring a solid foundation in computer science principles, 
+        with a particular focus on data structures, algorithms, and programming languages. 
+        My hands-on experience with technologies such as Express.js, Node.js, React.js, and SQL, paired with a 
+        commitment to continuous learning, ensures that I stay current with industry developments. 
+        I am passionate and have developed skills in both frontend and backend development through various projects. 
+        This diverse technical background, helps to make meaningful contributions to innovative development 
+        teams and to succeed in a dynamic full-stack development career.
         </p>
     </div>
   )

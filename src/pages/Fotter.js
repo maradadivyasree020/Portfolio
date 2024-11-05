@@ -1,79 +1,50 @@
 import React from "react";
-import { FloatingDock } from "@/components/ui/floating-dock";
 import {
   IconBrandGithub,
-  IconBrandX,
-  IconExchange,
-  IconHome,
-  IconNewSection,
-  IconTerminal2,
+  IconBrandGmail,
+  IconBrandLinkedin
 } from "@tabler/icons-react";
-import Image from 'react-bootstrap/Image'; 
 
 export function Fotter() {
   const links = [
     {
-      title: "Home",
-      icon: (
-        <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-
-    {
-      title: "Products",
-      icon: (
-        <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-    {
-      title: "Components",
-      icon: (
-        <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-    {
-      title: "Aceternity UI",
-      icon: (
-        <Image
-          src="https://assets.aceternity.com/logo-dark.png"
-          width={20}
-          height={20}
-          alt="Aceternity Logo" />
-      ),
-      href: "#",
-    },
-    {
-      title: "Changelog",
-      icon: (
-        <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-
-    {
-      title: "Twitter",
-      icon: (
-        <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-    {
       title: "GitHub",
-      icon: (
-        <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
+      icon: <IconBrandGithub className="h-8 w-8 text-white" />, // Set icon color to white
+      href: "https://github.com/maradadivyasree020/disney-clone",
+    },
+    {
+      title: "LinkedIn",
+      icon: <IconBrandLinkedin className="h-8 w-8 text-white" />, // Set icon color to white
+      href: "https://linkedin.com/in/maradadivyasree",
+    },
+    {
+      title: "Gmail",
+      icon: <IconBrandGmail className="h-8 w-8 text-white" />, // Set icon color to white
+      href: "mailto:maradadivyasree@gmail.com",
     },
   ];
+
   return (
-    (<div className="flex items-center justify-center h-[35rem] w-full">
-      <FloatingDock
-        // only for demo, remove for production
-        mobileClassName="translate-y-20"
-        items={links} />
-    </div>)
+    <div className="flex items-center justify-center h-[35rem] w-full">
+      {/* Glass Effect Container */}
+      <div className="flex space-x-6 p-6 rounded-full bg-white/10 backdrop-blur-md border border-white/30 shadow-lg">
+        {links.map((link) => (
+          <a
+            key={link.title}
+            href={link.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={link.title}
+            className="relative group flex items-center justify-center h-12 w-12 rounded-full hover:bg-white/20 transition duration-300"
+          >
+            {link.icon}
+            {/* Tooltip for Hover */}
+            <span className="absolute bottom-[-2.5rem] left-1/2 transform -translate-x-1/2 bg-black text-white text-xs font-medium px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition duration-300">
+              {link.title}
+            </span>
+          </a>
+        ))}
+      </div>
+    </div>
   );
 }
