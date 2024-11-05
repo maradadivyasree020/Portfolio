@@ -25,7 +25,7 @@ export function Fotter() {
   ];
 
   return (
-    <div className="flex items-center justify-center h-[35rem] w-full">
+    <div className="flex flex-col items-center justify-center h-[35rem] w-full">
       {/* Glass Effect Container */}
       <div className="flex space-x-6 p-6 rounded-full bg-white/10 backdrop-blur-md border border-white/30 shadow-lg">
         {links.map((link) => (
@@ -45,6 +45,7 @@ export function Fotter() {
           </a>
         ))}
       </div>
+      <p className="mt-8 text-xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500">Marada Divya Sree</p>
     </div>
   );
 }
