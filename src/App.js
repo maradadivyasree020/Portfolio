@@ -31,6 +31,7 @@ function App() {
           <div id="projects"><Projects /></div>
           <div id="profiles"><Profiles /></div>
           <Fotter />
+          <p>Marada Divya Sree</p>
         </div>
       </div>
     </div>
