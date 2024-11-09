@@ -12,7 +12,7 @@ import { Link } from 'react-scroll';
 function App() {
   return (
     <div className=" flex flex-col items-center justify-center bg-black/[0.96]">
-      <nav className="cursor-pointer mt-[30px] top-0 left-0 right-0 flex justify-center space-x-[60px] p-[20px] backdrop-blur-md bg-white/30 border-b border-white/20 rounded-[40px] font-semibold">
+      <nav className="cursor-pointer mt-[30px] top-0 left-0 right-0 flex justify-center space-x-[10px] md:space-x-[60px] p-[20px] backdrop-blur-md bg-white/30 border-b border-white/20 rounded-[40px] font-semibold">
         <Link to="aboutme" smooth={true} duration={500} className='text-white '>About Me</Link>
         <Link to="skills" smooth={true} duration={500} className='text-white '>Skills</Link>
         <Link to="projects" smooth={true} duration={500} className='text-white '>Projects</Link>
