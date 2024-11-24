@@ -8,7 +8,7 @@ const AboutMe = () => {
         <p className='text-xl'>
         As an aspiring software developer, I bring a solid foundation in computer science principles, 
         with a particular focus on data structures, algorithms, and programming languages. 
-        My hands-on experience with technologies such as HTML, CSS, JS, Express.js, Node.js, React.js, and SQL, paired with a 
+        My hands-on experience with technologies such as HTML, CSS, JS, Express.js, Node.js, React.js, and MongoDB, paired with a 
         commitment to continuous learning, ensures that I stay current with industry developments. 
         I am passionate and have developed skills in both frontend and backend development through various projects. 
         This diverse technical background, helps to make meaningful contributions to innovative development 
