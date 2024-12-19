@@ -15,7 +15,7 @@ export function Fotter() {
     {
       title: "LinkedIn",
       icon: <IconBrandLinkedin className="h-8 w-8 text-white" />, // Set icon color to white
-      href: "https://linkedin.com/in/maradadivyasree",
+      href: "https://www.linkedin.com/in/marada-divya-sree-72b164255/",
     },
     {
       title: "Gmail",
