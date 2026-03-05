@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Skills = () => {
-  const list=["HTML","CSS","JS","React Js","Express Js","Node Js","Mongo DB","SQL","C","C++","Python"]
+  const list=["HTML","CSS","JS","React Js","Spring Boot","RAG","LLM Integration","SQL","C","C++","Python"]
   return (
     <div className='mt-[120px]'>
         <h4 className="text-6xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 bg-[length:300px_100%]">Skills</h4>
