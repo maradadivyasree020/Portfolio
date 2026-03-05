@@ -6,13 +6,11 @@ const AboutMe = () => {
         <h4 className="text-6xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 bg-[length:300px_100%]">About Me</h4>
         <br/>
         <p className='text-xl'>
-        As an aspiring software developer, I bring a solid foundation in computer science principles, 
-        with a particular focus on data structures, algorithms, and programming languages. 
-        My hands-on experience with technologies such as HTML, CSS, JS, Express.js, Node.js, React.js, and MongoDB, paired with a 
-        commitment to continuous learning, ensures that I stay current with industry developments. 
-        I am passionate and have developed skills in both frontend and backend development through various projects. 
-        This diverse technical background, helps to make meaningful contributions to innovative development 
-        teams and to succeed in a dynamic full-stack development career.
+       Working as an Associate Software Engineer at Emids, contributing to the development of Generative
+AI–enabled backend solutions using Java Spring Boot. Designed and developed Spring RESTful APIs to
+support secure data exchange and integration across enterprise healthcare platforms. Focused on building
+Retrieval-Augmented Generation (RAG) systems by integrating Large Language Models, embeddings,
+and vector databases for context-aware test case generation and intelligent data retrieval.
         </p>
     </div>
   )
