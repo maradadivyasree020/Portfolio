@@ -7,6 +7,7 @@ import { Fotter } from 'pages/Fotter';
 import Skills from 'pages/Skills';
 import  Projects  from 'pages/Projects';
 import  Profiles  from 'pages/Profiles';
+import TimeLine from 'pages/TimeLine';
 import { Link } from 'react-scroll';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         </div>
         <div className='mt-[280px]'>
           <div id="aboutme"><AboutMe /></div>
+          <div id="timeline"><TimeLine /></div>
           <div id="skills"><Skills /></div>
           <div id="projects"><Projects /></div>
           <div id="profiles"><Profiles /></div>

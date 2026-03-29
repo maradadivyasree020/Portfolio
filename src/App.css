@@ -64,3 +64,35 @@
     @apply border-border;
   } */
 }
+
+.node {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(168, 85, 247, 0.6);
+  color: #d8b4fe;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.line {
+  width: 2px;
+  height: 22px;
+  background: #a855f7;
+  margin: 8px 0;
+}
+
+.perspective-\[1200px\] {
+  perspective: 1200px;
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.translate-z-10 {
+  transform: translateZ(10px);
+}
+
+.translate-z-20 {
+  transform: translateZ(20px);
+}
