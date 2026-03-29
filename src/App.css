@@ -66,20 +66,36 @@
 }
 
 .node {
-  padding: 6px 14px;
+  padding: 8px 14px;
+  font-size: 12px;
+  color: white;
   border-radius: 999px;
-  border: 1px solid rgba(168, 85, 247, 0.6);
-  color: #d8b4fe;
-  font-size: 13px;
-  white-space: nowrap;
+
+  background: linear-gradient(
+    135deg,
+    rgba(168, 85, 247, 0.2),
+    rgba(236, 72, 153, 0.2)
+  );
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+
+  transition: all 0.3s ease;
+}
+
+.node:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
 }
 
 .line {
   width: 2px;
-  height: 22px;
-  background: #a855f7;
-  margin: 8px 0;
+  height: 20px;
+  background: linear-gradient(to bottom, #a855f7, #ec4899);
+  margin: 6px 0;
+  border-radius: 10px;
 }
+
 
 .perspective-\[1200px\] {
   perspective: 1200px;

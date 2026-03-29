@@ -1,76 +1,115 @@
-// import React from 'react'
-
-// const AboutMe = () => {
-//   return (
-//     <div>
-//       <h4 className="text-6xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 bg-[length:300px_100%]">
-//         About Me
-//       </h4>
-
-//       <br />
-
-//       <p className="text-xl leading-relaxed">
-//         I am currently working as an Associate Software Engineer at Emids, where I contribute to building 
-//         Generative AI–powered backend solutions using Java Spring Boot. My work involves designing and 
-//         developing scalable RESTful APIs that enable secure data exchange across enterprise healthcare platforms.
-        
-//         <br /><br />
-        
-//         I focus on writing robust and maintainable code, supported by comprehensive unit testing using JUnit 
-//         to ensure reliability and performance. I have also worked on integrating Large Language Models into 
-//         real-world applications by developing a Retrieval-Augmented Generation (RAG)–based test case generator.
-        
-//         <br /><br />
-        
-//         This system leverages embeddings, vector databases, and LLMs to generate context-aware test cases 
-//         and enable intelligent data retrieval, improving both development efficiency and testing quality.
-//       </p>
-//     </div>
-//   )
-// }
-
-// export default AboutMe
-
-import React from 'react'
+import React from "react";
+import { motion } from "framer-motion";
 
 const AboutMe = () => {
   return (
     <div className="px-6 mt-[120px] flex flex-col items-center">
 
-      {/* Heading */}
-      <h4 className="text-5xl md:text-6xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 text-center">
+      <motion.h4
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="text-5xl md:text-6xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 text-center mb-12"
+      >
         About Me
-      </h4>
+      </motion.h4>
 
-      <br />
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="max-w-4xl text-center bg-white/5 backdrop-blur-xl border border-white/20 rounded-2xl p-8 shadow-lg mb-10"
+      >
+        <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
+          I am an <span className="text-purple-400 font-semibold">Associate Software Engineer</span> focused on 
+          building <span className="text-white font-semibold">scalable backend systems</span> and 
+          <span className="text-pink-400 font-semibold"> AI-driven applications</span>.
+        </p>
+      </motion.div>
 
-      {/* Content */}
-      <p className="text-lg md:text-xl leading-relaxed text-gray-300 max-w-5xl text-center">
-        
-        I enjoy building scalable applications and AI-driven solutions. I have worked on projects like a 
-        <span className="font-semibold text-white"> Code Editor</span>, 
-        <span className="font-semibold text-white"> Chat Application</span>, and an 
-        <span className="font-semibold text-white"> AI-powered Test Case Generator</span>, focusing on performance and clean architecture.
+      <div className="grid md:grid-cols-2 gap-8 max-w-5xl w-full">
 
-        <br /><br />
+        <motion.div
+          initial={{ opacity: 0, x: -80 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          className="bg-white/5 backdrop-blur-xl border border-white/20 rounded-2xl p-6 shadow-lg 
+          hover:shadow-[0_0_25px_rgba(168,85,247,0.4)] transition"
+        >
+          <h5 className="text-xl font-semibold text-purple-400 mb-4">
+            🚀 Projects
+          </h5>
 
-        One of my key projects involves developing a 
-        <span className="text-purple-400 font-semibold"> Retrieval-Augmented Generation (RAG)</span> system, 
-        where I integrated <span className="font-semibold text-white"> Large Language Models</span>, embeddings, 
-        and vector databases to generate context-aware test cases and enable intelligent data retrieval.
+          <p className="text-gray-300 text-sm leading-relaxed">
+            Built applications including a 
+            <span className="text-white font-semibold"> Code Editor</span>, 
+            <span className="text-white font-semibold"> Real-time Chat Application</span>, and an 
+            <span className="text-white font-semibold"> AI-powered Test Case Generator</span>, 
+            along with other full-stack and AI-driven projects, focusing on performance, scalability, and clean architecture.
+          </p>
+        </motion.div>
 
-        <br /><br />
+        <motion.div
+          initial={{ opacity: 0, x: 80 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          className="bg-white/5 backdrop-blur-xl border border-white/20 rounded-2xl p-6 shadow-lg 
+          hover:shadow-[0_0_25px_rgba(168,85,247,0.4)] transition"
+        >
+          <h5 className="text-xl font-semibold text-pink-400 mb-4">
+            🤖 Generative AI
+          </h5>
 
-        Currently, I work as an 
-        <span className="text-pink-400 font-semibold"> Associate Software Engineer</span> at 
-        <span className="font-semibold text-white"> Emids</span>, where I build 
-        <span className="text-purple-400 font-semibold"> Generative AI–enabled backend systems</span> using 
-        <span className="font-semibold text-white"> Java Spring Boot</span>. I design RESTful APIs, implement 
-        JUnit testing, and integrate LLM-based solutions into real-world healthcare platforms.
+          <p className="text-gray-300 text-sm leading-relaxed">
+            Developed a 
+            <span className="text-purple-400 font-semibold"> RAG-based system</span> integrating 
+            <span className="text-white font-semibold"> LLMs</span>, embeddings, and vector databases 
+            to generate context-aware outputs and enable intelligent retrieval.
+          </p>
+        </motion.div>
 
-      </p>
+        <motion.div
+          initial={{ opacity: 0, x: -80 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          className="bg-white/5 backdrop-blur-xl border border-white/20 rounded-2xl p-6 shadow-lg 
+          hover:shadow-[0_0_25px_rgba(168,85,247,0.4)] transition"
+        >
+          <h5 className="text-xl font-semibold text-purple-400 mb-4">
+            💼 Experience
+          </h5>
+
+          <p className="text-gray-300 text-sm leading-relaxed">
+            Currently working at 
+            <span className="text-white font-semibold"> Emids</span>, building 
+            <span className="text-purple-400 font-semibold"> AI-enabled backend systems</span> using 
+            <span className="text-white font-semibold"> Java Spring Boot</span>, 
+            designing REST APIs and integrating LLM-based solutions.
+          </p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, x: 80 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          className="bg-white/5 backdrop-blur-xl border border-white/20 rounded-2xl p-6 shadow-lg 
+          hover:shadow-[0_0_25px_rgba(168,85,247,0.4)] transition"
+        >
+          <h5 className="text-xl font-semibold text-pink-400 mb-4">
+            🎯 Focus
+          </h5>
+
+          <p className="text-gray-300 text-sm leading-relaxed">
+            Passionate about combining 
+            <span className="text-white font-semibold"> backend engineering</span> with 
+            <span className="text-pink-400 font-semibold"> Generative AI</span> to build 
+            scalable, impactful, and production-ready systems.
+          </p>
+        </motion.div>
+
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default AboutMe
+export default AboutMe;

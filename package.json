@@ -2,9 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-
   "homepage": "https://maradadivyasree020.github.io/Portfolio",
-
   "dependencies": {
     "@tabler/icons-react": "^3.21.0",
     "@testing-library/jest-dom": "^5.17.0",
@@ -13,7 +11,7 @@
     "aceternity-ui": "^0.2.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
-    "framer-motion": "^11.11.11",
+    "framer-motion": "^11.18.2",
     "lucide-react": "^0.454.0",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.5",
@@ -27,7 +25,6 @@
     "typewriter-effect": "^2.21.0",
     "web-vitals": "^2.1.4"
   },
-
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -36,14 +33,12 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
     ]
   },
-
   "browserslist": {
     "production": [
       ">0.2%",
@@ -56,7 +51,6 @@
       "last 1 safari version"
     ]
   },
-
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "gh-pages": "^6.3.0",
