@@ -139,11 +139,13 @@ const Projects = () => {
             </div>
 
             <div className="flex justify-center gap-4 mt-10">
+
               <a
                 href={project.srccode}
                 target="_blank"
                 rel="noreferrer"
-                className="px-5 py-2 rounded-lg border border-white/30 hover:bg-white/10 transition hover:scale-105"
+                className="px-5 py-2 rounded-lg border border-white/30 
+                text-white hover:bg-white/10 transition hover:scale-105"
               >
                 Code
               </a>

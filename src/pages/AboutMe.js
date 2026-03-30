@@ -20,7 +20,7 @@ const AboutMe = () => {
         transition={{ duration: 0.6 }}
         className="max-w-4xl text-center bg-white/5 backdrop-blur-xl border border-white/20 rounded-2xl p-8 shadow-lg mb-10"
       >
-        <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
+        <p className="text-lg md:text-lg text-gray-300 leading-relaxed">
           I am an <span className="text-purple-400 font-semibold">Associate Software Engineer</span> focused on 
           building <span className="text-white font-semibold">scalable backend systems</span> and 
           <span className="text-pink-400 font-semibold"> AI-driven applications</span>.

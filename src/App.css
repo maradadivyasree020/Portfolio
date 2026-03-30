@@ -65,6 +65,17 @@
   } */
 }
 
+html, body, #root {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
 .node {
   padding: 8px 14px;
   font-size: 12px;
