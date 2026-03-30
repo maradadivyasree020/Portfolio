@@ -106,7 +106,6 @@ const Header = () => {
 
       </motion.div>
 
-      {/* 🖱 Scroll Indicator */}
       <div className="absolute bottom-8 flex flex-col items-center text-gray-400 animate-bounce">
         <span className="text-sm mb-2">Scroll</span>
         <div className="w-5 h-9 border-2 border-gray-400 rounded-full flex justify-center">
