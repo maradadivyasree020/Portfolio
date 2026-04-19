@@ -94,7 +94,8 @@ const Header = () => {
           </Link>
 
           <a
-            href="/resume.pdf"
+            href={process.env.PUBLIC_URL + "/MaradaDivyaSree_Resume.pdf"}
+            download="MaradaDivyaSree_Resume.pdf" 
             className="px-6 py-3 rounded-xl border border-white/20 
             bg-white/10 backdrop-blur-md text-white 
             hover:bg-white/20 transition"

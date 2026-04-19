@@ -3,22 +3,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import ce from "../assets/ce.png";
 import tc from "../assets/tc.png";
+import url from "../assets/url.png";
 
 const Projects = () => {
   const list = [
-    {
-      name: "Code Editor",
-      img: ce,
-      srccode: "https://github.com/maradadivyasree020/CodeEditor",
-      link: "https://maradadivyasree020.github.io/CodeEditor/",
-      architecture: [
-        ["User Code"],
-        ["Monaco Editor (HTML/CSS/JS Highlighting)"],
-        ["Run Trigger"],
-        ["Execution Engine"],
-        ["Validation + Output / Errors"],
-      ],
-    },
     {
       name: "AI Test Case Generator",
       img: tc,
@@ -33,6 +21,35 @@ const Projects = () => {
         ["Test Case Output"],
       ],
     },
+    {
+      name: "URL Shortener Service",
+      img: url,
+      srccode: "https://github.com/maradadivyasree020/UrlShortner",
+      link: "https://github.com/maradadivyasree020/UrlShortner",
+      architecture: [
+        ["User Input", "Long URL"],
+        ["UI / Client"],
+        ["API Layer (Spring Boot)"],
+        ["Short URL Generation (MurmurHash + Timestamp)"],
+        ["Database (MySQL - URL Mapping)"],
+        ["Short URL Response"],
+        ["Redirection (Short URL → Original URL)"],
+        ["Expiration Check (Default / Custom Time)"],
+      ],
+    },
+    {
+      name: "Code Editor",
+      img: ce,
+      srccode: "https://github.com/maradadivyasree020/CodeEditor",
+      link: "https://maradadivyasree020.github.io/CodeEditor/",
+      architecture: [
+        ["User Code"],
+        ["Monaco Editor (HTML/CSS/JS Highlighting)"],
+        ["Run Trigger"],
+        ["Execution Engine"],
+        ["Validation + Output / Errors"],
+      ],
+    }
   ];
 
   return (
